@@ -1,0 +1,26 @@
+/*FIBONACCI*/
+#include<stdio.h>
+int main()
+{
+int sum = 0, n,m;
+int a = 0;
+int b = 1;
+printf("Enter the nth value: ");
+scanf("%d", &n);
+printf("enter m value");
+scanf("%d",&m);
+printf("Fibonacci series: ");
+while(sum <= n)
+{
+if(m==sum){
+printf("YES");
+    break;
+}
+a = b; 
+b = sum;
+sum = a + b;}
+if(m!=sum)
+printf("NO");
+
+return 0;
+}
